@@ -14,7 +14,7 @@ public class Pograma {
 	
 	public static int metodoMaior(int a, int b, int c) {
 		if (a > b && a > c) {
-			System.out.println(a);
+			System.out.println(a); //comentando as 2123 para testes
 		}
 		if (a < b && b > c) {
 			System.out.println(b);;
