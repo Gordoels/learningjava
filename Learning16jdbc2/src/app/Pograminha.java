@@ -24,11 +24,11 @@ public class Pograminha { //SET GLOBAL time_zone = '+3:00'; <--- na linha de cmd
 			}
 		}catch (SQLException e) {
 			e.printStackTrace();
+		}finally { //fechar conexão por ultimo sempre
+			DB.closeStat(st);
+			DB.closeResSet(rs);
+			DB.closeConnection();
 		}
-		DB.closeConnection();
-		DB.closeStat(st);
-		DB.closeResSet(rs);
-
 	}
 
 }
